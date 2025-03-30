@@ -1,4 +1,4 @@
-package diffrenceWithJava.conversion
+package difference_with_java.conversion
 
 fun main() {
 
@@ -12,10 +12,13 @@ fun main() {
 
     var c: Int
     c = b.toInt()
-    // Type mismatch d = c
 
     println("b의 타입 : " + b.javaClass.typeName)
     println("c의 타입 : " + c.javaClass.typeName)
+
+    // Error
+    var d: Int
+    // Type mismatch d = b
 }
 
 /*

@@ -1,4 +1,4 @@
-package diffrenceWithJava.conversion;
+package difference_with_java.conversion;
 
 public class JavaConversion {
 
