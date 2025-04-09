@@ -21,11 +21,11 @@ val b: Int? = 10
 ### 코틀린의 기본형 배열과 객체 배열
 ```kotlin
 val intArray = IntArray(3)        // [0, 0, 0]
-val objectArray = arrayOf(1, 2, 3) // Array<Int>
+val objectArray = arrayOf(1, 2, null) // Array<Int>
 
 println("intArray: $intArray") // [0, 0, 0] → 실제로 int 타입 값 저장
 println("intArray values: ${intArray.contentToString()}")
-println("objectArray: $objectArray") // [Integer(1), Integer(2), Integer(3)] → 객체 저장
+println("objectArray: $objectArray") // [Integer(1), Integer(2), null] → 객체 저장
 println("objectArray values: ${objectArray.contentToString()}")
 ```
 - 기본형 배열은 숫자나 불린 같은 값 자체를 저장하며 null은 올 수 없다.
@@ -38,5 +38,5 @@ println("objectArray values: ${objectArray.contentToString()}")
 val list: List<Int> = listOf(1, 2, 3)
 println("list[0].JavaClass: ${list[0].javaClass}") // list[0].JavaClass: class java.lang.Integer
 ```
-- JVM에서는 제네릭에 기본형을 직접 쓸 수 없기 때문에 Kotlin의 List<Int>는 내부적으로 List<Integer>로 처리된다. 
-- null을 허용하기 때문이다.
+- JVM에서는 제네릭에 기본형을 직접 쓸 수 없기 때문에 Kotlin의 `List<Int>`는 내부적으로 `List<Integer>`로 처리된다. 
+- null을 허용해야 하기 때문이다.
