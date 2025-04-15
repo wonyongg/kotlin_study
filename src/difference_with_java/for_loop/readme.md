@@ -1,4 +1,4 @@
-## 코틀린의 for 문 / 범위 표현
+## 코틀린의 for 문 / 범위 표현(Range)
 
 - 코틀린에서의 fot 문은 자바와 같이 전통적인 for 문 형태가 없습니다.
 - 범위(range)와 컬렉션을 사용한 간결한 형태로 표현됩니다.
@@ -14,6 +14,12 @@ for (i in 0..9) {...}
 ```kotlin
 for (i in 0..9) {
     println(i) // 0 ~ 9 출력
+}
+```
+```kotlin
+val cars = arrayOf("Volvo", "BMW", "Ford", "Mazda")
+if ("Volvo" in cars) {
+    println("It exists!")
 }
 ```
 - `..` 연산자를 사용하여 쉽게 정의도 가능합니다.
