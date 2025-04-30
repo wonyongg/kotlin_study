@@ -1,10 +1,14 @@
 package kotlin_class
 
+// 일반 클래스 선언
 class Car {
     var brand = ""
     var model = ""
     var year = 0
 }
+
+// 생성자
+class CarWithConstructors(var brand: String, var model: String, var year: Int)
 
 fun main() {
 
@@ -29,4 +33,10 @@ fun main() {
     println(car2.brand)
     println(car2.model)
     println(car2.year)
+
+    val carWithConstructors = CarWithConstructors("HYUNDAI", "SONATA", 2025)
+
+    println(carWithConstructors.brand)
+    println(carWithConstructors.model)
+    println(carWithConstructors.year)
 }
