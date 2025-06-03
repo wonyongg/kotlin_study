@@ -36,7 +36,7 @@ val juice: Fruit = fruitMaker.getJuice() // Apple이지만 Fruit로 꺼낼 수 �
 - `JuiceMaker<out Fruit>` Fruit 또는 그 자식인 Apple, Banana 주스만 꺼낼 수 있다.
 - 안에 뭐가 들어있는지는 모르나 꺼내면 항상 Fruit이다.
 - `out`은 읽기 전용으로 안전하게 꺼내만 쓸 수 있다.
-- 그래서 `Apple`을 만드는 기계를 `Fruit를 만드는 기계처럼 사용할 수 있다.
+- 그래서 `Apple`을 만드는 기계를 `Fruit`를 만드는 기계처럼 사용할 수 있다.
 
 ## 반공변성(Contravariant) - `in T`(쓰기 전용)
 ```kotlin
