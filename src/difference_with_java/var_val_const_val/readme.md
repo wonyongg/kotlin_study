@@ -32,3 +32,21 @@
     - `object`는 kotlin에서 싱글톤 객체를 만들 때 사용하는 키워드이다.
         - 싱글톤이기 때문에 JVM 시작 후 항상 하나만 존재하므로 내부에 선언이 가능하다.
   
+  ## lateinit var
+- 참조 타입에만 사용이 가능하다.
+  - null이 아닌 상태에서 값을 나중에 참조할 수 있게 하는 기능이다.
+  - 기본타입은 항상 초기화되어 있어야 하기 때문에 기본 타입(Int, Boolean 등)에는 사용이 불가하다.
+- 주로 nullable이 아닌 변수인데 생성자/초기화 시점에 값을 못 넣을 때 사용한다.
+- ```kotlin
+  lateinit var name: String  // 나중에 초기화할 예정
+  
+  fun init() {
+  name = "ChatGPT"
+  }
+  
+  fun printName() {
+  println(name.length)  // 초기화 안 하면 예외
+  }
+  ```
+- var만 가능하다. (val은 불가능)
+- nullable이 아닌 타입이어야 한다.
