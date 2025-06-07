@@ -1,4 +1,4 @@
-package difference_with_java.type_inference
+package difference_with_java.type
 
 fun main() {
 //    var name -> Error
