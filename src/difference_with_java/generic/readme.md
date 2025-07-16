@@ -19,7 +19,7 @@ val numBox: Box<Number> = intBox // ❌ 안 됨!
 ## 공변성(Covariant) - `OUT T` (읽기 전용)
 ```kotlin
 open class Fruit
-class Apple : Fruit()
+class Apple : Fruit() // 코틀린에서 : 콜론은 Java의 extends 또는 implements 역할
 class Banana : Fruit()
 
 class JuiceMaker<out T>(private val juice: T) {
